@@ -21,8 +21,8 @@ function Portfolio() {
               ensuring that customers can easily browse and shop for custom dried flower bouquets from anywhere.
               </p>
               <div className='text-[#5361FF] font-montserrat cursor-pointer font-semibold flex my-4'>
-               <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/flowerShop"> Github ↗ </a></span> 
-                <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://engrcoderose.github.io/flowerShop/">Live ↗ </a></span>
+               <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/flowerShop"  target='_blank' > Github ↗ </a></span> 
+                <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://engrcoderose.github.io/flowerShop/" target='_blank' >Live ↗ </a></span>
               </div>
           </div>
         </Fade>
@@ -55,8 +55,8 @@ function Portfolio() {
             <h3 className="mb-4 font-montserrat font-semibold text-[#2A3B47] text-2xl"> Movie Hunter</h3>
             <p className="mb-4 font-montserrat"> Movie-land is api based website that is used to search for movies, and display the results.</p>
             <div className='text-[#5361FF] font-montserrat cursor-pointer font-semibold flex my-4'>
-              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/movieHunter"> Github ↗ </a></span> 
-              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://movie-hunter-iota.vercel.app/">Live ↗ </a></span>
+              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/movieHunter" target='_blank'> Github ↗ </a></span> 
+              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://movie-hunter-iota.vercel.app/" target='_blank'>Live ↗ </a></span>
             </div>
         </div>
       </Fade>
@@ -72,8 +72,8 @@ function Portfolio() {
             <p className="mb-4 font-montserrat"> A web-based application that allows users to trigger animal sounds by clicking on corresponding buttons. The project aims to provide an interactive 
             and fun experience for users, particularly children, by associating each button with the sound of a specific animal. </p>
             <div className='text-[#5361FF] font-montserrat cursor-pointer font-semibold flex my-4'>
-              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/animalSounds"> Github ↗ </a></span> 
-              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://engrcoderose.github.io/animalSounds/">Live ↗ </a></span>
+              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://github.com/engrcoderose/animalSounds" target='_blank'> Github ↗ </a></span> 
+              <span className='transform w-[100px] transition duration-500 hover:scale-110'><a href="https://engrcoderose.github.io/animalSounds/" target='_blank'>Live ↗ </a></span>
             </div>
         </div>
       </Fade>
