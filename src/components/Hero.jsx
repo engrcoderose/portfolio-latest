@@ -1,6 +1,6 @@
 import React from 'react';
 import heroImg from '../assets/img/rose.png';
-import Fade from 'react-reveal/Fade';
+const Fade = require("react-reveal/Fade")
 
 function Hero() {
     // const url = "facebook.com";
@@ -18,11 +18,11 @@ function Hero() {
 
                         {/* buttons */}
                         <div className='mt-5 ml-1'>
-                            <a href='https://drive.google.com/file/d/1AfKJJWpEOlBTuX6hlsyjyJCmx0FeeCmA/view?usp=sharing' id='resumeButton' className='group relative h-12 w-48 overflow-hidden outline-white px-6 py-2 rounded-lg border-2 text-white my-4 uppercase shadow'
-                            target='_blank'>
+                            <button id='resumeButton' className='group relative h-12 w-48 overflow-hidden outline-white px-6 py-2 rounded-lg border-2 text-white my-4 uppercase shadow'
+                            >
                                 <div className='absolute inset-0 w-3 bg-white transition-all duration-[500ms] ease-out group-hover:w-full'></div>
-                                <span className='relative text-white font-bold font-montserrat group-hover:text-[#5361FF]'>Resume</span>
-                            </a>
+                                <span className='relative text-white font-bold font-montserrat group-hover:text-[#5361FF]'> <a href='https://drive.google.com/file/d/1AfKJJWpEOlBTuX6hlsyjyJCmx0FeeCmA/view?usp=drive_link' target='_blank'>Resume</a></span>
+                            </button>
                         </div>
                     </div>
                 </Fade>

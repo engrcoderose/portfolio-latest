@@ -2,7 +2,7 @@ import React from 'react';
 import abtImg from '../assets/img/project1.PNG';
 import abtImg2 from '../assets/img/movieHunter.PNG';
 import abtImg3 from '../assets/img/project2.PNG';
-import Fade from 'react-reveal/Fade';
+const Fade = require("react-reveal/Fade")
 
 function Portfolio() {
   return (

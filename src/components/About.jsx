@@ -1,7 +1,8 @@
 import React from 'react'
 import abtImg from '../assets/img/fil.jpg'
 import { BsGithub,BsLinkedin,BsFillFileCodeFill } from "react-icons/bs";
-import Fade from 'react-reveal/Fade';
+
+const Fade = require("react-reveal/Fade")
 
 function About() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import javaScriptIcon from '../assets/icons/javascript-icon.png';
 import pythonIcon from '../assets/icons/python-icon.png';
 import mySqlIcon from '../assets/icons/mySQL-icon.png';
@@ -17,7 +17,7 @@ import cnnIcon from '../assets/icons/cnn-icon.png';
 import yoloIcon from '../assets/icons/yolo-icon.png';
 import svmIcon from '../assets/icons/svm-icon.png';
 
-
+const Fade = require("react-reveal/Fade")
 function Skills() {
   return (
     <div className='mt-4 mb-28' id="skills">

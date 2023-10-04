@@ -1,5 +1,5 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+const Fade = require("react-reveal/Fade")
 
 function Contact() {
   return (
@@ -13,8 +13,8 @@ function Contact() {
         <div className='float-left items-center mx-auto'>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Email</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>liwanagroseann.8.3@gmail.com</p>
-          <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Phone</h1>
-          <p className='text-[#2A3B47] font-semibold font-montserrat'>+63 906-123-8790</p>
+          <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Linkedin</h1>
+          <p className='text-[#2A3B47] font-semibold font-montserrat'>in/roseannliwanag/</p>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Address</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>Pampanga, Philippines</p>
         </div>
