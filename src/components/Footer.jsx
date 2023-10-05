@@ -35,9 +35,9 @@ function Footer() {
         </div>
         <div className='my-4'> <p className='text-white font-montserrat text-center'> {year} - Rose Ann Liwanag. All rights reserved. </p> </div>
         <div className='flex justify-between items-center mx-10 text-white'> 
-          <span className='mx-2'><BsFillFileCodeFill size={30}/></span>
-          <span className='mx-2'><BsLinkedin size={30}/></span>
-          <span className='mx-2'><BsGithub size={30}/></span>
+          <span className='mx-2 hover:scale-125 transition-all'><a href='https://portfolio-latest-5rwt4xz8j-roses-projects-7b2361e8.vercel.app/' target='_blank'><BsFillFileCodeFill size={30}/></a></span>
+          <span className='mx-2 hover:scale-125 transition-all'><a href='https://www.linkedin.com/in/roseannliwanag/' target='_blank'><BsLinkedin size={30}/></a></span>
+          <span className='mx-2 hover:scale-125 transition-all'><a href='https://github.com/engrcoderose' target='_blank'><BsGithub size={30}/></a></span>
         </div>
       </motion.div>
       

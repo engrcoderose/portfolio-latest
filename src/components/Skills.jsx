@@ -136,7 +136,7 @@ function Skills() {
               <img className='mx-2' src={tailwindIcon} alt='icon'/>
               <img className='mx-2' src={bootstrapIcon} alt='icon'/>
               <img className='mx-2' src={reactIcon} alt='icon'/>
-              <img className='mx-2' src='' alt='icon'/>
+              {/* <img className='mx-2' src='' alt='icon'/> */}
             </motion.div> 
           
         </motion.div>
@@ -158,7 +158,7 @@ function Skills() {
               <img className='mx-2' src={psIcon} alt='icon'/>
               <img className='mx-2' src={ilIcon} alt='icon'/>
               <img className='mx-2' src={figmaIcon} alt='icon'/>
-              <img className='mx-2' src='' alt='icon'/>
+              {/* <img className='mx-2' src='' alt='icon'/> */}
             </motion.div>
           
         </motion.div>

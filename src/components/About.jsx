@@ -89,9 +89,9 @@ function About() {
             workplace.
           </p>
           <div className='flex items-center my-5 text-[#697477] cursor-pointer'> 
-            <span className='mx-2 hover:scale-125 transition-all'><BsFillFileCodeFill size={30}/></span>
-            <span className='mx-2 hover:scale-125 transition-all'><BsLinkedin size={30}/></span>
-            <span className='mx-2 hover:scale-125 transition-all'><BsGithub size={30}/></span>
+            <span className='mx-2 hover:scale-125 transition-all'><a href='https://portfolio-latest-5rwt4xz8j-roses-projects-7b2361e8.vercel.app/' target='_blank'><BsFillFileCodeFill size={30}/></a></span>
+            <span className='mx-2 hover:scale-125 transition-all'><a href='https://www.linkedin.com/in/roseannliwanag/' target='_blank'><BsLinkedin size={30}/></a></span>
+            <span className='mx-2 hover:scale-125 transition-all'><a href='https://github.com/engrcoderose' target='_blank'><BsGithub size={30}/></a></span>
           </div>
         </motion.div>
         
