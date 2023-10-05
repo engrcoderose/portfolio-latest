@@ -13,7 +13,7 @@ const variants = {
     // End
     Text: {
         opacity:1,
-        x:20,
+        x:-10,
         transition: {
             duration: 0.5,
             delay: 0.5
@@ -27,7 +27,7 @@ const variants = {
     //end
     Img:{
         opacity:1,
-        x:-20,
+        x:0,
         transition: {
             duration: 0.5,
             delay: 0.5
@@ -40,7 +40,7 @@ function Hero() {
     // const url = "facebook.com";
 
   return (
-    <div className='pt-14 px-7 md:px-20 md:h-screen bg-[#5361FF] w-full' id="home">
+    <div className='pt-14 px-7 md:px-20 md:h-screen bg-[#5361FF] md:w-full' id="home">
         <div>
             <div className='w-full flex flex-col md:flex-row item-center justify-between'>
                 
@@ -51,9 +51,9 @@ function Hero() {
                     initial='initialText'
                     whileInView='Text'
                     className='text-white mx-auto text-center md:text-start'>
-                    <h6 className='text-3xl mt-12 ml-1 font-montserrat font-semibold'>Hello, I'm</h6>
-                    <h1 className='font-semibold text-7xl md:text-8xl my-4 font-montserrat uppercase'>Rose Ann <br/>Liwanag.</h1>
-                    <p className='md:w-100 my-4 font-montserrat ml-1'> Aspiring Software Engineer | Computer Engineer Graduate 2023 </p>
+                    <h6 className='text-md md:text-3xl mt-4 md:mt-12 md:ml-1 font-montserrat font-semibold'>Hello, I'm</h6>
+                    <h1 className='font-semibold text-4xl md:text-8xl my-4 font-montserrat uppercase'>Rose Ann <br/>Liwanag.</h1>
+                    <p className='w-100 md:w-100 my-4 font-montserrat text-sm md:ml-1'> Aspiring Software Engineer | Computer Engineer Graduate 2023 </p>
 
                     {/* buttons */}
                     <div className='mt-5 ml-1'>
@@ -70,7 +70,7 @@ function Hero() {
                     initial='initialImg'
                     whileInView='Img'
                     className='order-first md:order-last relative mx-auto'>
-                    <img src={heroImg} alt="img-hero"/>
+                    <img src={heroImg} alt="img-hero" className='w-[75%] md:w-[100%] m-auto relative z-40'/>
                 </motion.div>
 
             </div>

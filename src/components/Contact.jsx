@@ -5,12 +5,12 @@ const variants = {
   // start
   intialRight:{
       opacity: 0,
-      x:0
+      x:20
   },
   // End
   Right: {
       opacity:1,
-      x:20,
+      x:-10,
       transition: {
           duration: 0.5,
           delay: 0.5
@@ -39,10 +39,10 @@ function Contact() {
           variants={variants}
           initial='headerInitial'
           whileInView='header'
-          className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-28 uppercase'>Contact Me</motion.h1>
+          className='text-center text-[#2A3B47] text-4xl md:text-[3rem] font-montserrat font-bold my-28 uppercase'>Contact Me</motion.h1>
       
       
-      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center'>
+      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-10 md:px-20 text-[#697477] gap-10 items-center'>
       
         <motion.div
           variants={variants}

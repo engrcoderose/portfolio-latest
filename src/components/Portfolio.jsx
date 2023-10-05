@@ -9,12 +9,12 @@ const variants = {
   // start
   intialRight:{
       opacity: 0,
-      x:-100
+      x:50
   },
   // End
   Right: {
       opacity:1,
-      x:20,
+      x:-10,
       transition: {
           duration: 0.5,
           delay: 0.5
@@ -50,16 +50,16 @@ const variants = {
 
 function Portfolio() {
   return (
-    <div className='mt-4 mb-28 md:mx-20' id="projects">
+    <div className='mt-4 md:mb-28 md:mx-20' id="projects">
       
       <motion.h1
         variants={variants}
         initial='headerInitial'
         whileInView='header'
-        className='text-center my-28 text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold uppercase'>Portfolio</motion.h1>
+        className='text-center my-28 text-[#2A3B47] md:text-[3rem] text-4xl font-montserrat font-bold uppercase'>Portfolio</motion.h1>
       
         {/* Project 1 */}
-      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center my-20'>
+      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-10 md:px-20 text-[#697477] gap-10 items-center my-20'>
 
         
         <motion.div
@@ -92,7 +92,7 @@ function Portfolio() {
       </div>
 
       {/* Project 2 */}
-      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center my-16'>
+      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-10 md:px-20 text-[#697477] gap-10 items-center my-16'>
 
       
         <motion.div
@@ -125,7 +125,7 @@ function Portfolio() {
       </div>
 
       {/* Project 3 */}
-      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center my-16'>
+      <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-10 md:px-20 text-[#697477] gap-10 items-center my-16'>
       
         <motion.div
           variants={variants}
