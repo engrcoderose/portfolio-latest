@@ -80,12 +80,10 @@ function About() {
           className="md:float-left text-[20px]">
           <h2 className="text-[2rem] font-bold text-[#5361FF] mb-4 font-montserrat">I am Rose Ann Liwanag.</h2>
           <p className="mb-4 font-montserrat">You can call me <span className="text-[#5361FF] font-semibold font-montserrat"> ROSE / ROSAS.</span></p>
-          <p className="mb-4 font-montserrat">A Computer Engineering, seeking an entry-level position that will allow me to strengthen and
-            update my
-            knowledgeand skills
+          <p className="mb-4 font-montserrat">A Computer Engineer, seeking an entry-level position that will allow me to strengthen and
+            update my knowledge and skills
             in my field within a professional and corporate environment. I have a keen ability to quickly grasp new
-            concepts and
-            I am always enthusiastic about learning and undergoing training to enhance my performance and growth in the
+            concepts and I am always enthusiastic about learning and undergoing training to enhance my performance and growth in the
             workplace.
           </p>
           <div className='flex items-center my-5 text-[#697477] cursor-pointer'> 
