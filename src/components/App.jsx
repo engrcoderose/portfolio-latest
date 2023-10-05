@@ -7,6 +7,7 @@ import Skills from './Skills';
 import Contact from './Contact';
 import Footer from './Footer';
 
+
 function App() {
   return (
     <div>

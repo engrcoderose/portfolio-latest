@@ -1,26 +1,68 @@
 import React from 'react';
+import{motion} from 'framer-motion';
+
+const variants = {
+  // start
+  intialRight:{
+      opacity: 0,
+      x:0
+  },
+  // End
+  Right: {
+      opacity:1,
+      x:20,
+      transition: {
+          duration: 0.5,
+          delay: 0.5
+      }
+  },
+  headerInitial:{
+    opacity:0,
+    y:-20
+  },
+  header:{
+    opacity:1,
+    y:0,
+    transition:{
+      duration:0.5,
+      delay:0.5
+    }
+  }
+}
 
 
 function Contact() {
   return (
     <div className='mb-28' id='contact'>
       
-        <h1 className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-28 uppercase'>Contact Me</h1>
+        <motion.h1 
+          variants={variants}
+          initial='headerInitial'
+          whileInView='header'
+          className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-28 uppercase'>Contact Me</motion.h1>
       
       
       <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center'>
       
-        <div className='float-left items-center mx-auto'>
+        <motion.div
+          variants={variants}
+          initial='initialRight'
+          whileInView='Right'
+          className='float-left items-center mx-auto'>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Email</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>liwanagroseann.8.3@gmail.com</p>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Linkedin</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>in/roseannliwanag/</p>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Address</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>Pampanga, Philippines</p>
-        </div>
+        </motion.div>
       
     
-        <div className='float-left mx-auto'>
+        <motion.div
+          variants={variants}
+          initial='initialRight'
+          whileInView='Right'
+          className='float-left mx-auto'>
 
         
           <div className='bg-[#5361ff] p-4 w-[300px] rounded-xl'>
@@ -43,7 +85,7 @@ function Contact() {
            
           </div>
         
-        </div>
+        </motion.div>
       </div>
 
     </div>

@@ -1,26 +1,83 @@
-import React from 'react'
-import abtImg from '../assets/img/fil.jpg'
+import React from 'react';
+import abtImg from '../assets/img/fil.jpg';
 import { BsGithub,BsLinkedin,BsFillFileCodeFill } from "react-icons/bs";
+import {motion} from 'framer-motion';
+
+// animation effect
+const variants = {
+  // start
+  intialText:{
+      opacity: 0,
+      x:-50
+  },
+  // End
+  Text: {
+      opacity:1,
+      x:-50,
+      transition: {
+          duration: 0.5,
+          delay: 0.5
+      }
+  },
+  //start
+  initialImg:{
+      opacity: 0,
+      x:-50
+  },
+  //end
+  Img:{
+      opacity:1,
+      x:0,
+      transition: {
+          duration: 0.5,
+          delay: 0.5
+      }
+  },
+  headerInitial:{
+    opacity:0,
+    y:-20
+  },
+  header:{
+    opacity:1,
+    y:0,
+    transition:{
+      duration:0.5,
+      delay:0.5
+    }
+  }
+}
 
 
 function About() {
   return (
     <div className='mt-4 mb-28' id="about">
       
-      <h1 className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-10 md:my-28 uppercase'>About me</h1>
+      <motion.h1
+        variants={variants}
+        initial='headerInitial'
+        whileInView='header'
+        className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-10 md:my-28 uppercase'>About me</motion.h1>
       
       <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center'>
 
         
-        <div className="md:float-left mx-auto relative">
+        <motion.div
+            variants={variants}
+            initial='initialImg'
+            whileInView='Img'
+            className="md:float-left mx-auto relative">
           <img src={abtImg} alt='About-me'
           className='relative z-10 w-full md:w-[350px] h-[300px] md:h-[400px] rounded-[15px] overflow-clip'/>
           <div className='w-full h-full border-4 border-[#5361FF] rounded-[15px] absolute top-[20px] left-[20px]'></div>
-        </div>
+        </motion.div>
           
 
           
-        <div class="md:float-left text-[20px]">
+        <motion.div
+          variants={variants}
+          initial='initialText'
+          whileInView='Text'
+        class="md:float-left text-[20px]">
           <h2 className="text-[2rem] font-bold text-[#5361FF] mb-4 font-montserrat">I am Rose Ann Liwanag.</h2>
           <p className="mb-4 font-montserrat">You can call me <span className="text-[#5361FF] font-semibold font-montserrat"> ROSE / ROSAS.</span></p>
           <p className="mb-4 font-montserrat">A Computer Engineering, seeking an entry-level position that will allow me to strengthen and
@@ -36,7 +93,7 @@ function About() {
             <span className='mx-2 hover:scale-125 transition-all'><BsLinkedin size={30}/></span>
             <span className='mx-2 hover:scale-125 transition-all'><BsGithub size={30}/></span>
           </div>
-        </div>
+        </motion.div>
         
         
 
