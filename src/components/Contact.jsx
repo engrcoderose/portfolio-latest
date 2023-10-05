@@ -1,15 +1,15 @@
-import React from 'react'
-const Fade = require("react-reveal/Fade")
+import React from 'react';
+
 
 function Contact() {
   return (
     <div className='mb-28' id='contact'>
-      <Fade top cascade>
+      
         <h1 className='text-center text-[#2A3B47] text-[3rem] test-700 font-montserrat font-bold my-28 uppercase'>Contact Me</h1>
-      </Fade>
+      
       
       <div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 px-20 text-[#697477] gap-10 items-center'>
-      <Fade left>
+      
         <div className='float-left items-center mx-auto'>
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Email</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>liwanagroseann.8.3@gmail.com</p>
@@ -18,11 +18,11 @@ function Contact() {
           <h1 className='text-[#5361FF] my-4 uppercase font-bold font-montserrat text-xl'>Address</h1>
           <p className='text-[#2A3B47] font-semibold font-montserrat'>Pampanga, Philippines</p>
         </div>
-      </Fade>
+      
     
         <div className='float-left mx-auto'>
 
-        <Fade right>
+        
           <div className='bg-[#5361ff] p-4 w-[300px] rounded-xl'>
             <div className='my-4'>
               <input type='text' id='name' name='name' placeholder='Name' required
@@ -42,7 +42,7 @@ function Contact() {
             </div>
            
           </div>
-        </Fade>
+        
         </div>
       </div>
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import heroImg from '../assets/img/rose.png';
-const Fade = require("react-reveal/Fade")
+import heroImg from '../assets/img/rose.png'
 
 function Hero() {
     // const url = "facebook.com";
@@ -10,29 +9,26 @@ function Hero() {
         <div>
             <div className='w-full flex flex-col md:flex-row item-center justify-between'>
                 {/* texts */}
-                <Fade left>
-                    <div className='text-white mx-auto text-center md:text-start'>
-                        <h6 className='text-3xl mt-12 ml-1 font-montserrat font-semibold'>Hello, I'm</h6>
-                        <h1 className='font-semibold text-7xl md:text-8xl my-4 font-montserrat uppercase'>Rose Ann <br/>Liwanag.</h1>
-                        <p className='md:w-100 my-4 font-montserrat ml-1'> Aspiring Software Developer | Computer Engineer Graduate 2023 </p>
+        
+                <div className='text-white mx-auto text-center md:text-start'>
+                    <h6 className='text-3xl mt-12 ml-1 font-montserrat font-semibold'>Hello, I'm</h6>
+                    <h1 className='font-semibold text-7xl md:text-8xl my-4 font-montserrat uppercase'>Rose Ann <br/>Liwanag.</h1>
+                    <p className='md:w-100 my-4 font-montserrat ml-1'> Aspiring Software Engineer | Computer Engineer Graduate 2023 </p>
 
-                        {/* buttons */}
-                        <div className='mt-5 ml-1'>
-                            <button id='resumeButton' className='group relative h-12 w-48 overflow-hidden outline-white px-6 py-2 rounded-lg border-2 text-white my-4 uppercase shadow'
-                            >
-                                <div className='absolute inset-0 w-3 bg-white transition-all duration-[500ms] ease-out group-hover:w-full'></div>
-                                <span className='relative text-white font-bold font-montserrat group-hover:text-[#5361FF]'> <a href='https://drive.google.com/file/d/1AfKJJWpEOlBTuX6hlsyjyJCmx0FeeCmA/view?usp=drive_link' target='_blank'>Resume</a></span>
-                            </button>
-                        </div>
+                    {/* buttons */}
+                    <div className='mt-5 ml-1'>
+                        <button id='resumeButton' className='group relative h-12 w-48 overflow-hidden outline-white px-6 py-2 rounded-lg border-2 text-white my-4 uppercase shadow'>
+                            <div className='absolute inset-0 w-3 bg-white transition-all duration-[500ms] ease-out group-hover:w-full'></div>
+                            <span className='relative text-white font-bold font-montserrat group-hover:text-[#5361FF]'> <a href='https://drive.google.com/file/d/1AfKJJWpEOlBTuX6hlsyjyJCmx0FeeCmA/view?usp=drive_link' target='_blank'>Resume</a></span>
+                        </button>
                     </div>
-                </Fade>
-                <Fade right>
-                    <div className='order-first md:order-last relative mx-auto'>
-                        <img src={heroImg} alt="img-hero"/>
-                    </div>
-                </Fade>
+                </div>
+        
+        
+                <div className='order-first md:order-last relative mx-auto'>
+                    <img src={heroImg} alt="img-hero"/>
+                </div>
 
-                
             </div>
 
             {/* divider */}
